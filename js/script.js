@@ -8,6 +8,10 @@ $(document).ready(function(){
 	$('#burger-container').on('click', function(){
 		$(this).toggleClass('open');
 	});
+	var i = 1;
+	setInterval( () => {
+		$('#intro').css("background-image", "url('static/images/v" + i + ".jpg')");
+		i++;
+		if(i == 7) i = 1;
+	}, 4000);
 });
-
-
