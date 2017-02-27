@@ -82,7 +82,7 @@ nav {
 	padding: 45px !important;
 }
 
-.version-pic {
+.version-pic, .version-info {
 	height: calc(100vh - 65px);
 }
 
@@ -98,4 +98,70 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 10px;
+}
+
+.version-info p {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.carousel-indicators {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	height: 55px;
+}
+
+.carousel-indicators .active {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.carousel-indicators button {
+	width: 100%;
+	border-style: none;
+	outline: none;
+}
+
+.carousel-indicators button:first-child {
+	border-radius: 0 0 0 10px;
+}
+
+.carousel-indicators button:last-child {
+	border-radius: 0 0 10px 0;
+}
+
+
+@media only screen and (max-width : 992px) {
+
+	.version-info {
+		height: auto;
+		margin-bottom: -85px;
+		padding-top: 95px !important;
+	}
+
+	.version-info p {
+		transform: none;
+	}
+
+}
+
+@media only screen and (max-width : 700px) {
+
+	.carousel-indicators {
+		width: 100% !important;
+		-webkit-transform: translateX(-20%);
+		-moz-transform: translateX(-20%);
+		transform: translateX(-20%);
+	}
+
+	.carousel-indicators button {
+		border-radius: 0 !important;
+	}
+
 }
