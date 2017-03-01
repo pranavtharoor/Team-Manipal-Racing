@@ -14,4 +14,25 @@ $(document).ready(function(){
 		i++;
 		if(i == 7) i = 1;
 	}, 4000);
+
+	
+	var y_scroll_pos = window.pageYOffset;
+	    var aboutUs = $('#about-us').offset().top;
+    if(y_scroll_pos > aboutUs) {
+	 	$('nav').css("background-color", "rgba(62, 70, 76, 1)");
+	 } else {
+	    $('nav').css("background-color", "rgba(62, 70, 76, 0.4)");
+	 }
+
+	$(window).on('scroll', function() {
+		var y_scroll_pos = window.pageYOffset;
+	    var aboutUs = $('#about-us').offset().top - 65;
+
+	    if(y_scroll_pos > aboutUs) {
+	       	$('nav').css("background-color", "rgba(62, 70, 76, 1)");
+	    } else {
+	       		$('nav').css("background-color", "rgba(62, 70, 76, 0.4)");
+	    }
+	});
+
 });

@@ -1,9 +1,14 @@
 body {
-	background-color: #eee;
+	color: #202020 !important;
 }
 
 nav {
 	padding: 7px 20px;
+	transition: background-color 0.4s;
+}
+
+.links {
+	color: #fff !important;
 }
 
 #navdropdown {
@@ -35,15 +40,17 @@ nav {
 #intro {
 	/*background-image: url('');*/
 	transition: background-image 2s ease-in-out;
-	background-size: cover;
+	background-size: cover !important;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	padding-top: 0;
 }
 
 .cover {
-	background-color: rgba(40, 40, 40,0.6);
-	min-height: calc(100vh - 65px);
+	background-color: rgba(40, 40, 40,0.4);
+	min-height: 100vh;
+	margin-top: -65px;
 	width: 100%;
 }
 
@@ -85,7 +92,7 @@ nav {
 }
 
 #versions, .carousel-inner, .version-data {
-	background: #bbb;
+	background: #CED7DB;
 	min-height: calc(100vh - 65px);
 }
 
@@ -137,6 +144,13 @@ nav {
 	width: 100%;
 	border-style: none;
 	outline: none;
+	background-color: rgba(160, 160, 160, 0.6);
+}
+
+.carousel-indicators button.active {
+	background-color: rgba(32, 32, 32, 0.6);
+	color: #fff;
+	/*background-color: #5F7C8A !important;*/
 }
 
 .carousel-indicators button:first-child {
@@ -186,6 +200,10 @@ nav {
 
 	.carousel-indicators button {
 		border-radius: 0 !important;
+	}
+
+	#about-us {
+		text-align: left;
 	}
 
 }
