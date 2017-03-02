@@ -8,20 +8,21 @@ $(document).ready(function(){
 	$('#burger-container').on('click', function(){
 		$(this).toggleClass('open');
 	});
+
 	var i = 1;
 	setInterval( () => {
-		$('#intro').css("background-image", "url('static/images/v" + i + ".jpg')");
+		$('#intro').css("background-image", "url('static/images/pics/IMG_" + i + ".JPG')");
 		i++;
-		if(i == 7) i = 1;
+		if(i == 11) i = 0;
 	}, 4000);
 
 	
 	var y_scroll_pos = window.pageYOffset;
 	    var aboutUs = $('#about-us').offset().top;
     if(y_scroll_pos > aboutUs) {
-	 	$('nav').css("background-color", "rgba(62, 70, 76, 1)");
+	 	$('nav').css("background-color", "rgba(38, 50, 56, 1)");
 	 } else {
-	    $('nav').css("background-color", "rgba(62, 70, 76, 0.4)");
+	    $('nav').css("background-color", "rgba(38, 50, 56, 0.7)");
 	 }
 
 	$(window).on('scroll', function() {
@@ -29,10 +30,18 @@ $(document).ready(function(){
 	    var aboutUs = $('#about-us').offset().top - 65;
 
 	    if(y_scroll_pos > aboutUs) {
-	       	$('nav').css("background-color", "rgba(62, 70, 76, 1)");
+	       	$('nav').css("background-color", "rgba(38, 50, 56, 1)");
 	    } else {
-	       		$('nav').css("background-color", "rgba(62, 70, 76, 0.4)");
+	       		$('nav').css("background-color", "rgba(38, 50, 56, 0.7)");
 	    }
 	});
 
 });
+
+
+
+	    // if(y_scroll_pos > aboutUs) {
+	    //    	$('nav').css("background-color", "rgba(62, 70, 76, 1)");
+	    // } else {
+	    //    		$('nav').css("background-color", "rgba(62, 70, 76, 0.4)");
+	    // }

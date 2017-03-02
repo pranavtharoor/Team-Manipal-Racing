@@ -1,10 +1,15 @@
 body {
 	color: #202020 !important;
+	font-family: 'Montserrat' !important;
 }
 
 nav {
 	padding: 7px 20px;
 	transition: background-color 0.4s;
+	font-size: 20px;
+	font-variant: small-caps;
+	font-weight: bold;
+	letter-spacing: 1.3px;
 }
 
 .links {
@@ -16,7 +21,7 @@ nav {
 }
 
 #navdropdown li {
-	padding-right: 7px;
+	padding-right: 12px;
 }
 
 .fullpage {
@@ -26,8 +31,8 @@ nav {
 }
 
 #intro-heading {
-	font-size: 45px;
-	color: #eee;
+	font-size: 65px;
+	color: #ECEFF1;
 }
 
 #intro .cover {
@@ -38,8 +43,8 @@ nav {
 }
 
 #intro {
-	/*background-image: url('');*/
-	transition: background-image 2s ease-in-out;
+	background-image: url('../static/images/pics/IMG_0.JPG');
+	transition: background-image 0.5s ease-in-out;
 	background-size: cover !important;
 	background-position: center;
 	background-attachment: fixed;
@@ -48,14 +53,10 @@ nav {
 }
 
 .cover {
-	background-color: rgba(40, 40, 40,0.4);
+	background-color: rgba(80, 80, 80, 0.4);
 	min-height: 100vh;
 	margin-top: -65px;
 	width: 100%;
-}
-
-.container-fluid {
-	padding: 0;
 }
 
 #burger-container:hover, #burger-container:focus {
@@ -69,6 +70,7 @@ nav {
 
 #burger span {
 	transition: all ease-in-out 0.4s;
+	background-color: #eee;
 }
 
 #burger-container.open span:nth-child(2),
@@ -92,7 +94,7 @@ nav {
 }
 
 #versions, .carousel-inner, .version-data {
-	background: #CED7DB;
+	background: #B0BEC5;
 	min-height: calc(100vh - 65px);
 }
 
@@ -116,6 +118,7 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 10px;
+	margin: 20px;
 }
 
 .version-info p {
@@ -144,13 +147,12 @@ nav {
 	width: 100%;
 	border-style: none;
 	outline: none;
-	background-color: rgba(160, 160, 160, 0.6);
+	background-color: #78909C;
 }
 
 .carousel-indicators button.active {
-	background-color: rgba(32, 32, 32, 0.6);
+	background-color: #37474F;
 	color: #fff;
-	/*background-color: #5F7C8A !important;*/
 }
 
 .carousel-indicators button:first-child {
@@ -172,8 +174,8 @@ nav {
 	margin: 30px 0 20px;
 	display: flex;
 	justify-content: center;
+	color: #D31411;
 }
-
 
 @media only screen and (max-width : 992px) {
 
@@ -187,9 +189,21 @@ nav {
 		transform: none;
 	}
 
+	#navdropdown {
+		font-size: 16px !important;
+	}
+
+	#navdropdown li {
+		padding-right: 0px !important;
+	}
+
 }
 
 @media only screen and (max-width : 700px) {
+
+	#intro-heading {
+		font-size: 40px;
+	}
 
 	.carousel-indicators {
 		width: 100% !important;
@@ -204,6 +218,36 @@ nav {
 
 	#about-us {
 		text-align: left;
+		font-size: 16px;
+		padding-left: 8px !important; 
+		padding-right: 8px !important; 
+	}
+
+	.container-fluid {
+		padding: 0 !important;
 	}
 
 }
+
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*
+
+4336
+--4548
+5005
+5035
+5039
+5074
+5097
+5172
+5298
+--5374
+5488
+
+
+*/
