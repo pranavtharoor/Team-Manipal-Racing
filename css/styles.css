@@ -3,6 +3,26 @@ body {
 	font-family: 'Montserrat' !important;
 }
 
+.fullpage {
+	min-height: 100vh;
+	width: 100%;
+	padding-top: 65px !important;
+}
+
+.cover {
+	background-color: rgba(80, 80, 80, 0.4);
+	min-height: 100vh;
+	margin-top: -65px;
+	width: 100%;
+}
+
+.full-container {
+	padding: 0 30px 30px 30px;
+	font-size: 16px;
+	padding-top: 65px !important;
+}
+
+
 nav {
 	padding: 7px 20px;
 	transition: background-color 0.4s;
@@ -24,11 +44,6 @@ nav {
 	padding-right: 12px;
 }
 
-.fullpage {
-	min-height: 100vh;
-	width: 100%;
-	padding-top: 65px !important;
-}
 
 #intro-heading {
 	font-size: 65px;
@@ -52,12 +67,21 @@ nav {
 	padding-top: 0;
 }
 
-.cover {
-	background-color: rgba(80, 80, 80, 0.4);
-	min-height: 100vh;
-	margin-top: -65px;
-	width: 100%;
+
+#about-us {
+	padding: 0 60px;
+	font-size: 21px;
+	text-align: center;
 }
+
+#about-us .h1 {
+	margin: 30px 0 20px;
+	display: flex;
+	justify-content: center;
+	color: #D31411;
+}
+
+/********************************************************************/
 
 #burger-container:hover, #burger-container:focus {
 	background: none;
@@ -87,46 +111,32 @@ nav {
 	transform: rotate(-45deg) translateY(13px);
 }
 
-.full-container {
-	padding: 0 30px 30px 30px;
-	font-size: 16px;
-	padding-top: 65px !important;
-}
 
+/*****************************************************************/
 #versions, .carousel-inner, .version-data {
 	background: #B0BEC5;
 	min-height: calc(100vh - 65px);
 }
 
 .version-pic, .version-info {
-	padding: 45px !important;
-}
-
-.version-pic, .version-info {
-	height: calc(100vh - 65px);
+	padding: 110px 75px 0 !important;
+	min-height: calc(100vh - 65px);
 }
 
 .version-img {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	transform: translateY(-50%);
+	min-height: 350px;
 	height: 60vh;
 	width: auto;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 10px;
-	margin: 20px;
+	margin: 0 20px;
 }
 
 .version-info p {
 	position: relative;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	transform: translateY(-50%);
 }
 
 .carousel-indicators {
@@ -162,20 +172,7 @@ nav {
 .carousel-indicators button:last-child {
 	border-radius: 0 0 10px 0;
 }
-
-
-#about-us {
-	padding: 0 60px;
-	font-size: 21px;
-	text-align: center;
-}
-
-#about-us .h1 {
-	margin: 30px 0 20px;
-	display: flex;
-	justify-content: center;
-	color: #D31411;
-}
+/*************************************************************************/
 
 @media only screen and (max-width : 992px) {
 

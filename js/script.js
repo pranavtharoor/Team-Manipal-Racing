@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 	
 	var y_scroll_pos = window.pageYOffset;
-	    var aboutUs = $('#about-us').offset().top;
+	    var aboutUs = $('#about-us').offset().top - 65;
     if(y_scroll_pos > aboutUs) {
 	 	$('nav').css("background-color", "rgba(38, 50, 56, 1)");
 	 } else {
