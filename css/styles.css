@@ -81,6 +81,10 @@ nav {
 	color: #D31411;
 }
 
+#contact-us {
+	background-color: #ECEFF1;
+}
+
 /********************************************************************/
 
 #burger-container:hover, #burger-container:focus {
@@ -119,7 +123,7 @@ nav {
 }
 
 .version-pic, .version-info {
-	padding: 110px 75px 0 !important;
+	padding: 110px 75px 30px !important;
 	min-height: calc(100vh - 65px);
 }
 
@@ -135,6 +139,7 @@ nav {
 }
 
 .version-info p {
+	font-size: 16px;
 	position: relative;
 	top: 50%;
 }
