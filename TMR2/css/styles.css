@@ -1,0 +1,141 @@
+body {
+	margin: 0;
+	font-family: 'Cantarell';
+}
+
+@font-face {
+	font-family: 'Cantarell', sans-serif;
+}
+
+.fullpage {
+	height: 100vh;
+	width: 100%;
+}
+
+#title {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffffff;
+	width: 100%;
+	padding: 20px 20px 10px;
+	font-size: 30px;
+	box-sizing: border-box;
+}
+
+#home .fullpage {
+	background-image: url('../images/pics/IMG_0.JPG');
+	background-size: cover;
+	transition: background-image 0.6s ease-in-out;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.hidden {
+	display: none;
+}
+
+#home #title {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#home nav {
+	position: fixed;
+	top: 71px;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
+#cars #title {
+	display: none;
+}
+
+#cars nav {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+#sponsors .sponsor-pic, #sponsors .sponsor-pic img {
+	width: 100%;
+}
+
+#contact nav {
+	padding-right: 80px;
+}
+
+/*Nav - Start*/
+nav {
+    background-color: rgba(243, 80, 15, 0.9);
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 0 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(203, 70, 0, 0.9);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #f9f9f9;
+	margin: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(243, 80, 15, 0.9);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Nav - End*/
+
+.back-to-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 30px;
+	width: 30px;
+}

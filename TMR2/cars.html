@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Team Manipal Racing</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Cantarell:400i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#4BBFC3', '#f2f2f2', '#7BAABE', '#f2f2f2', '#7BAABE', '#f2f2f2', '#7BAABE', '#f2f2f2', '#7BAABE', '#f2f2f2'],
+            });
+        });
+    </script>
+
+    <style>
+        .section{
+            font-size: 6em;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body id="cars">
+	<div id="title"><strong>Team Manipal Racing</strong></div>
+	<nav>
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="about.html">About</a></li>
+		  <li class="dropdown">
+		    <a href="cars.html" class="dropbtn">Cars</a>
+		    <div class="dropdown-content">
+		      <a href="cars.html#2">V 8</a>
+		      <a href="cars.html#3">V 7</a>
+		      <a href="cars.html#4">V 6</a>
+		      <a href="cars.html#5">V 5</a>
+		      <a href="cars.html#6">V 4</a>
+		      <a href="cars.html#7">V 3i</a>
+		      <a href="cars.html#8">V 3</a>
+		      <a href="cars.html#9">V 2</a>
+		      <a href="cars.html#10">V 1</a>
+		    </div>
+		  </li>
+		  <li class="dropdown">
+		    <a href="javascript:void(0)" class="dropbtn">Team</a>
+		    <div class="dropdown-content">
+		      <a href="team.html">Current Team</a>
+		      <a href="alumni.html">Alumni</a>
+		    </div>
+		  </li>
+		  <li><a href="achievements.html">Achievements</a></li>
+		  <li><a href="sponsors.html">Sponsors</a></li>
+		  <li class="dropdown">
+		    <a href="javascript:void(0)" class="dropbtn">Gallery</a>
+		    <div class="dropdown-content">
+		      <a href="gallery.html">V 7 (2017)</a>
+		      <a href="gallery.html">V 6 (2016)</a>
+		      <a href="gallery.html">V 5 (2015)</a>
+		      <a href="gallery.html">V 4 (2014)</a>
+		      <a href="gallery.html">V 3i</a>
+		      <a href="gallery.html">V 3</a>
+		      <a href="gallery.html">V 2</a>
+		      <a href="gallery.html">V 1</a>
+		    </div>
+		  </li>
+		  <li><a href="contact.html">Contact&nbsp;Us</a></li>
+		</ul>
+	</nav>
+<div id="fullpage">
+    <div class="section">
+        <div class="slide">Cars V 1</div>
+        <div class="slide">Cars V 2</div>
+        <div class="slide">Cars V 3</div>
+        <div class="slide">Cars V 3i</div>
+        <div class="slide">Cars V 4</div>
+        <div class="slide">Cars V 5</div>
+        <div class="slide">Cars V 6</div>
+        <div class="slide">Cars V 7</div>
+        <div class="slide">Cars V 8</div>
+    </div>
+        <div class="section">V 8 specs</div>
+        <div class="section">V 7 specs</div>
+        <div class="section">V 6 specs</div>
+        <div class="section">V 5 specs</div>
+        <div class="section">V 4 specs</div>
+        <div class="section">V 3i specs</div>
+        <div class="section">V 3 specs</div>
+        <div class="section">V 2 specs</div>
+        <div class="section">V 1 specs</div>
+</div>
+<button class="back-to-top" onclick="$.fn.fullpage.moveTo(1, 0);"> ^ </button>
+
+</body>
+</html>
