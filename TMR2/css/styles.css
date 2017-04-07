@@ -17,6 +17,12 @@ button {
 	outline: none;
 }
 
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 #title {
 	background-color: rgba(0, 0, 0, 0.8);
 	color: #ffffff;
@@ -72,6 +78,18 @@ nav {
 
 #contact nav {
 	padding-right: 80px;
+}
+
+
+#achievements h1, #current-team h1, #current-alumni h1 {
+	text-align: center;
+	margin-top: 35px;
+	width: 100%;
+}
+
+
+#about, #current-team, #achievements, #current-alumni {
+	margin-bottom: 100px;
 }
 
 /*Nav - Start*/
@@ -269,10 +287,6 @@ li.dropdown {
 
 /*About - Start*/
 
-#about {
-	margin-bottom: 60px;
-}
-
 #about-us {
 	text-align: center;
 	padding: 60px 0 20px;
@@ -307,18 +321,39 @@ li.dropdown {
 /*About - End*/
 
 /*Achievements - Start*/
-#achievements {
-	margin-bottom: 100px;
-}
-
 .achievements-list {
 	padding: 0 80px;
 	line-height: 40px;
 	font-size: 1.2em;
 }
 
-#achievements h1 {
-	text-align: center;
-	margin-top: 35px;
+#achievements .flex-container div {
+	width: 450px;
 }
+
 /*Achievements - End*/
+
+/*Team - Start*/
+#current-team, #current-alumni {
+	padding: 0 80px;
+	font-size: 1.3em;
+	line-height: 35px;
+}
+
+#current-team h1 {
+	margin: 60px 0;
+}
+
+#current-alumni h1 {
+	margin: 60px 0 0;
+}
+
+.year {
+	margin: 60px 0 -10px 0; 
+	font-size: 30px;
+}
+
+.year:first-child {
+	margin-top: 0;
+}
+/*Team - End*/
