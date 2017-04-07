@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: 'Cantarell';
+	background-color: lavender;
 }
 
 @font-face {
@@ -10,6 +11,10 @@ body {
 .fullpage {
 	height: 100vh;
 	width: 100%;
+}
+
+button {
+	outline: none;
 }
 
 #title {
@@ -96,6 +101,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
+	transition: all 0.3s ease;
     background-color: rgba(203, 70, 0, 0.9);
 }
 
@@ -132,10 +138,187 @@ li.dropdown {
 }
 /*Nav - End*/
 
+/*Cars - Start*/
+
 .back-to-top {
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: 20px;
 	height: 30px;
-	width: 30px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #ddd;
+	padding: 20px 20px 30px 16px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;  
+	font-size: 20px;
 }
+
+.back-to-top:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	transition: all 0.3s ease-in-out;  
+}
+
+.car-data {
+	font-size: 1.3em;
+    text-align: left;
+    width: 40%;
+    display: inline-block;
+    margin-left: 60px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+.car-pic {
+	height: 70%;
+	width: 40%;
+	display: inline-block;
+	float: right;
+    margin-right: 60px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: 40px;
+}
+
+/*Cars - End*/
+
+/*Contact Us - Start*/
+
+.send-message {
+	margin: 20px;
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-direction: column;
+ 	align-items: center;
+}
+
+.send-message form {
+	text-align: left;
+	width: 400px;
+}
+
+.send-message input, .send-message textarea, .send-message button {
+	margin: 15px 0;
+	outline: none;
+	border: none;
+	font-size: 18px;
+	padding: 10px;
+	width: 400px;
+}
+
+.send-message input, .send-message textarea {
+	border-style: none none solid none;
+	background-color: transparent;
+	transition: all 0.5s ease;
+}
+
+.send-message input:focus, .send-message textarea:focus {
+	border-style: none none solid none;
+	background-color: transparent;
+	border-color: rgba(243, 80, 15, 0.9);
+	transition: all 0.5s ease;
+}
+
+.send-message button {
+	border-radius: 5px;
+	background-color: #111;
+	color: #eee;
+	width: 120px;
+	height: 45px;
+	transition: all 0.1s ease-in-out;
+}
+
+.send-message button:hover {
+	color: #111;
+	background-color: rgba(243, 80, 15, 0.9);
+	transition: all 0.1s ease-in-out;
+}
+/*Contact Us - End*/
+
+/*Chevrons - Start*/
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron.left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}
+/*Chevrons - End*/
+
+/*About - Start*/
+
+#about {
+	margin-bottom: 60px;
+}
+
+#about-us {
+	text-align: center;
+	padding: 60px 0 20px;
+	min-height: calc(100vh - 120px);
+}
+
+.heading {
+	font-size: 40px;
+	padding: 25px 0 10px;
+	color: rgba(243, 80, 15, 1);
+	text-align: center;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+	font-weight: 4px;
+}
+
+#mit-pic {
+	background-image: url('../images/mit.jpg');
+	height: 250px;
+	background-size: cover;
+	background-position: bottom;
+	margin: 20px 0;
+}
+
+.about {
+	padding: 10px 120px;
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+/*About - End*/
+
+/*Achievements - Start*/
+#achievements {
+	margin-bottom: 100px;
+}
+
+.achievements-list {
+	padding: 0 80px;
+	line-height: 40px;
+	font-size: 1.2em;
+}
+
+#achievements h1 {
+	text-align: center;
+	margin-top: 35px;
+}
+/*Achievements - End*/
