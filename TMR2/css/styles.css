@@ -154,6 +154,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 /*Nav - End*/
 
 /*Cars - Start*/
@@ -357,3 +358,114 @@ li.dropdown {
 	margin-top: 0;
 }
 /*Team - End*/
+
+/*Burger - Start*/
+
+#burger-container {
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+
+#burger {
+	cursor: pointer;
+	display: block;
+}
+
+#burger span {
+	background: #eee;
+	display: block;
+	width: 27px;
+	height: 2px;
+	margin-bottom: 7px;
+	position: relative;
+	top: 0;
+	transition: all ease-in-out 0.4s;
+	border-radius: 1px;
+}
+
+#burger-container.open span:nth-child(2) {
+	width: 0;
+	opacity: 0;
+}
+
+#burger-container.open span:nth-child(3) {
+	transform: rotate(45deg);
+	top: -9px;
+}
+
+#burger-container.open span:nth-child(1) {
+	transform: rotate(-45deg);
+	top: 9px;
+}
+/*Burger - End*/
+
+
+@media screen and (max-width: 855px) {
+
+	li a, .dropbtn {
+	    padding: 10px 12px;
+	}
+	 
+}
+
+@media screen and (max-width: 790px) {
+	 
+	#title {
+		font-size: 20px;
+		padding-bottom: 15px;
+	}
+
+	#burger-container {
+		display: block;
+	}
+
+	nav {
+		display: none;
+		border-radius: 0;
+		height: 100vh;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;		
+	}
+	
+	ul {
+		width: calc(100% - 21px);
+		margin-bottom: 20px;
+	}
+
+	li a {
+		width: 100%;
+		margin: 3px 0;
+	}	
+
+	.dropdown-content {
+		width: calc(100% - 65px);
+		position: relative;
+		display: block;
+		padding-left: 21px;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #333;
+		color: #eee;
+	}	
+
+	#about-us, .about, .achievements-list, #current-team, #current-alumni {
+		padding: 0 20px;
+		overflow-x: hidden;
+	}
+
+	.about {
+		text-align: left;
+	}
+
+	#home nav {
+		top: 63px;
+	}	
+}

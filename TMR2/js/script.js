@@ -5,9 +5,10 @@ $(document).ready(function(){
 	// 	scrollTop: $(section).offset().top
 	// 	}, 700);
 	// });
-	// $('#burger-container').on('click', function(){
-	// 	$(this).toggleClass('open');
-	// });
+	$('#burger-container').on('click', function(){
+		$(this).toggleClass('open');
+		$('nav').slideToggle();
+	});
 
 	var i = 1;
 	setInterval( () => {
