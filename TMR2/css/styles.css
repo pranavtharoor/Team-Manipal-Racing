@@ -468,4 +468,13 @@ li.dropdown {
 	#home nav {
 		top: 63px;
 	}	
+
+	.send-message input, .send-message textarea, .send-message button {
+		width: 80%;
+	}	
+
+	.send-message form {
+		width: 100%;
+	}
+
 }
