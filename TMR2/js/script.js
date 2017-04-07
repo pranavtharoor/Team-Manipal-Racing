@@ -15,23 +15,5 @@ $(document).ready(function(){
 		i++;
 		if(i == 10) i = 0;
 	}, 4000);
-	// var y_scroll_pos = window.pageYOffset;
-	//     var aboutUs = $('#about-us').offset().top - 65;
- //    if(y_scroll_pos > aboutUs) {
-	//  	$('nav').css("background-color", "rgba(38, 50, 56, 1)");
-	//  } else {
-	//     $('nav').css("background-color", "rgba(38, 50, 56, 0.7)");
-	//  }
-
-	// $(window).on('scroll', function() {
-	// 	var y_scroll_pos = window.pageYOffset;
-	//     var aboutUs = $('#about-us').offset().top - 65;
-
-	//     if(y_scroll_pos > aboutUs) {
-	//        	$('nav').css("background-color", "rgba(38, 50, 56, 1)");
-	//     } else {
-	//        		$('nav').css("background-color", "rgba(38, 50, 56, 0.7)");
-	//     }
-	// });
 
 });
