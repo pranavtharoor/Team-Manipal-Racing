@@ -477,4 +477,24 @@ li.dropdown {
 		width: 100%;
 	}
 
+	#cars #title {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 5;
+		padding: 10px;
+	}
+
+	#cars #burger-container {
+		top: 15px;
+		right: 15px;
+	}
+
+	#cars nav {
+		position: fixed;
+		top: 48px;
+		height: calc(100vh - 48px);
+	}
+
 }
